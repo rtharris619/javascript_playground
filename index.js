@@ -14,6 +14,6 @@ const person = {
   }
 };
 
-console.log(person.name.first);
+console.log(person.name.last);
 person.bio();
 person.greeting();
