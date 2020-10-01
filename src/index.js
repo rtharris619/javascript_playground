@@ -32,3 +32,7 @@ console.log(languages);
 
 languages = Arrays.removeFromBeginning(languages);
 console.log(languages);
+
+console.log(Arrays.generateSequence(10));
+
+console.log(Arrays.generateRange(0, 4, 1));
