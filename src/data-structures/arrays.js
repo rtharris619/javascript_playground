@@ -5,6 +5,13 @@ function loopOverArray (array) {
   });
 }
 
+function getArrayEntries (array) {
+  let iterator = array.entries();
+  for (let e of iterator) {
+    console.log(e);
+  }
+}
+
 function insertIntoArray (array, insertIndex, itemToInsert) {
   array.splice(insertIndex, 0, itemToInsert);
   return array;
@@ -22,6 +29,11 @@ function removeFromBeginning (array) {
 
 function combineArrays (array1, array2) {
   return array1.concat(array2);
+}
+
+function isAllElementsLessThan (array, lessThanValue) {
+  const isBelowThreshold = (currentValue) => currentValue < lessThanValue;
+  return array.every(isBelowThreshold);
 }
 
 function arrayFromString (string) {
@@ -54,10 +66,16 @@ function generateRange (start, stop, step) {
   return Array.from({length: (stop - start) / step + 1}, (_, i) => start + (i * step));
 }
 
+function generateAlphabet () {
+  return generateRange('A'.charCodeAt(0), 'Z'.charCodeAt(0), 1).map(x => String.fromCharCode(x));
+}
+
 module.exports.loopOverArray = loopOverArray;
+module.exports.getArrayEntries = getArrayEntries;
 module.exports.insertIntoArray = insertIntoArray;
 module.exports.insertAtBeginning = insertAtBeginning;
 module.exports.removeFromBeginning = removeFromBeginning;
 
 module.exports.generateSequence = generateSequence;
 module.exports.generateRange = generateRange;
+module.exports.generateAlphabet = generateAlphabet;

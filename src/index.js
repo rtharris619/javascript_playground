@@ -21,18 +21,22 @@
 var Arrays = require('./data-structures/arrays');
 
 let fruits = ['Apple', 'Banana'];
-Arrays.loopOverArray(fruits);
+//Arrays.loopOverArray(fruits);
 
 let languages = ['C#', 'Java', 'JavaScript', 'Python'];
 languages = Arrays.insertIntoArray(languages, 1, 'Rust');
-console.log(languages);
+//console.log(languages);
 
 languages = Arrays.insertAtBeginning(languages, 'Clojure');
-console.log(languages);
+//console.log(languages);
 
 languages = Arrays.removeFromBeginning(languages);
-console.log(languages);
+//console.log(languages);
 
-console.log(Arrays.generateSequence(10));
+//console.log(Arrays.generateSequence(10));
 
-console.log(Arrays.generateRange(0, 4, 1));
+//console.log(Arrays.generateRange(1, 10, 2));
+
+//console.log(Arrays.generateAlphabet());
+
+Arrays.getArrayEntries(Arrays.generateAlphabet());
