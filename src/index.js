@@ -39,4 +39,31 @@ languages = Arrays.removeFromBeginning(languages);
 
 //console.log(Arrays.generateAlphabet());
 
-Arrays.getArrayEntries(Arrays.generateAlphabet());
+//Arrays.getArrayEntries(Arrays.generateAlphabet());
+
+//const array1 = [1, 2, 3, 4, 5];
+//console.log(Arrays.fillArray(array1, 0, 2, 4));
+
+//let string = 'hello world';
+//console.log(Arrays.charArrayFromString(string));
+
+// var array3 = ["I'm telling on you. ", "Only joking.", " I'd never do that."];
+// console.log(Arrays.generateWordsFromSentences(array3));
+
+// var array4 = ['Fire', 'Air', 'Water'];
+// console.log(Arrays.arrayToString(array4));
+
+// var array5 = [1,2,3,4];
+// console.log(Arrays.calculateSumOfArray(array5));
+
+// var array6 = [{x: 22}, {x: 42}];
+// console.log(Arrays.calculateMaxOfCoordinateArray(array6));
+
+// var array7 = [{x: 1, y: 0}, {x: 2, y: 2}, {x: 3, y: 4}];
+// console.log(Arrays.calculateSumOfObjectArray(array7));
+
+var array8 = [[0, 1], [2, 3], [4, 5]];
+console.log(Arrays.flattenArrayOfArrays(array8));
+
+var array9 = ['Alice', 'Bob', 'Tiff', 'Bruce', 'Alice'];
+console.log(Arrays.countObjectInstances(array9));

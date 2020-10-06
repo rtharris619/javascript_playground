@@ -31,18 +31,69 @@ function combineArrays (array1, array2) {
   return array1.concat(array2);
 }
 
+// Filters
+
+function filterWordLengthGreaterThan (array, wordLength) {
+  return array.filter(word => word.length > wordLength);
+}
+
+// Find
+
+function findItemGreaterThan (array, value) {
+  return array.find(element => element > value);
+}
+
+function findItemIndexGreaterThan (array, value) {
+  return array.findIndex(element => element > value);
+}
+
 function isAllElementsLessThan (array, lessThanValue) {
   const isBelowThreshold = (currentValue) => currentValue < lessThanValue;
   return array.every(isBelowThreshold);
 }
 
-function arrayFromString (string) {
-  return Array.from(string);
+function isInArray (array, itemToFind) {
+  return array.includes(itemToFind);
 }
 
-function arrayFromSet (set) {
-  // Example: set = new Set(['foo', 'bar', 'baz', 'foo']);
-  return Array.from(set);
+function indexOfItemInArray (array, itemToFind) {
+  return array.indexOf(itemToFind);
+}
+
+function lastIndexOfItemInArray (array, itemToFind) {
+  return array.lastIndexOf(itemToFind);
+}
+
+// Fill Array Methods
+
+function fillArray (array, fillValue, fromIndex, toPosition) {  
+  return array.fill(fillValue, fromIndex, toPosition);
+}
+
+function fillArrayFromIndex (array, fillValue, fromIndex) {
+  return array.fill(fillValue, fromIndex);
+}
+
+function fillArrayCompletely (array, fillValue) {
+  return array.fill(fillValue);
+}
+
+// Maps
+
+function testFlatMap (array) {
+  // Let's say we want to remove all the negative numbers
+  // and split the odd numbers into an even number and a 1
+  // array = [5, 4, -3, 20, 17, -33, -4, 18]
+  return array.flatMap((n) => (n < 0) ? [] : (n % 2 == 0) ? [n] : [n-1, 1]);
+  // expected output: [4, 1, 4, 20, 16, 1, 18]
+}
+
+function removeAllNegatives (array) {
+  return array.map(x => x > 0);
+}
+
+function multiplyEachItem (array, value) {
+  return array.map(x => x * value);
 }
 
 function arrayFromMap (map) {
@@ -58,6 +109,50 @@ function arrayKeysFromMap (map) {
   return Array.from(map.keys());
 }
 
+// Reducer
+
+function calculateSumOfArray (array) {
+  const reducer = (accumulator, currentValue) => accumulator + currentValue;
+  return array.reduce(reducer, 0);
+}
+
+function calculateSumOfObjectArray (array) {
+  return array.reduce((accumulator, currentValue) => accumulator + currentValue.x, 0);
+}
+
+function calculateMaxOfCoordinateArray (array) {
+  const reducer = (maximum, currentValue) => Math.max(maximum, currentValue);
+  return array.map(element => element.x).reduce(reducer, -Infinity);
+}
+
+function flattenArrayOfArrays (array) {
+  return array.reduce((accumulator, currentValue) => accumulator.concat(currentValue), []);
+}
+
+function countObjectInstances (array) {
+  return array.reduce(function (accumulator, currentValue) {
+    if (currentValue in accumulator) {
+      accumulator[currentValue]++;
+    } else {
+      accumulator[currentValue] = 1;
+    }
+    return accumulator;
+  }, {});
+}
+
+function charArrayFromString (string) {
+  return Array.from(string);
+}
+
+function arrayFromSet (set) {
+  // Example: set = new Set(['foo', 'bar', 'baz', 'foo']);
+  return Array.from(set);
+}
+
+function arrayToString (array) {
+  return array.join('');
+}
+
 function generateSequence (length) {
   return Array.from({length: length}, (_, i) => i);
 }
@@ -70,12 +165,28 @@ function generateAlphabet () {
   return generateRange('A'.charCodeAt(0), 'Z'.charCodeAt(0), 1).map(x => String.fromCharCode(x));
 }
 
+function generateWordsFromSentences (array) {
+  // Example: array = ["it's Sunny in", "", "California"];
+  return array.flatMap(x => x.split(" "));
+  // Returns: ["it's","Sunny","in", "", "California"]
+}
+
 module.exports.loopOverArray = loopOverArray;
 module.exports.getArrayEntries = getArrayEntries;
 module.exports.insertIntoArray = insertIntoArray;
 module.exports.insertAtBeginning = insertAtBeginning;
 module.exports.removeFromBeginning = removeFromBeginning;
+module.exports.fillArray = fillArray;
+
+module.exports.arrayToString = arrayToString;
+module.exports.charArrayFromString = charArrayFromString;
+module.exports.calculateSumOfArray = calculateSumOfArray;
+module.exports.calculateSumOfObjectArray = calculateSumOfObjectArray;
+module.exports.calculateMaxOfCoordinateArray = calculateMaxOfCoordinateArray;
+module.exports.flattenArrayOfArrays = flattenArrayOfArrays;
+module.exports.countObjectInstances = countObjectInstances;
 
 module.exports.generateSequence = generateSequence;
 module.exports.generateRange = generateRange;
 module.exports.generateAlphabet = generateAlphabet;
+module.exports.generateWordsFromSentences = generateWordsFromSentences;
