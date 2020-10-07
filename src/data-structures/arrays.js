@@ -31,6 +31,10 @@ function combineArrays (array1, array2) {
   return array1.concat(array2);
 }
 
+function returnSliceOfArray (array, fromIndex, toIndex) {
+  return array.slice(fromIndex, toIndex);
+}
+
 // Filters
 
 function filterWordLengthGreaterThan (array, wordLength) {
@@ -62,6 +66,12 @@ function indexOfItemInArray (array, itemToFind) {
 
 function lastIndexOfItemInArray (array, itemToFind) {
   return array.lastIndexOf(itemToFind);
+}
+
+// Sorting
+
+function sortNumbers (array) {
+  return array.sort((a, b) => a - b);
 }
 
 // Fill Array Methods
@@ -140,6 +150,64 @@ function countObjectInstances (array) {
   }, {});
 }
 
+function groupObjectArrayBy (objectArray, property) {
+  return objectArray.reduce(function (accumulator, currentValue) {
+    let key = currentValue[property];
+    if (!accumulator[key]) {
+      accumulator[key] = [];
+    }
+    accumulator[key].push(currentValue);
+    return accumulator;
+  }, {});
+}
+
+function testBondFromObjectArray () {
+  let friends = [{
+    name: 'Anna',
+    books: ['Bible', 'Harry Potter'],
+    age: 21
+  }, {
+    name: 'Bob',
+    books: ['War and peace', 'Romeo and Juliet'],
+    age: 26
+  }, {
+    name: 'Alice',
+    books: ['The Lord of the Rings', 'The Shining'],
+    age: 18
+  }];
+  console.log(bondFromObjectArray(friends));
+}
+
+function bondFromObjectArray (objectArray) {
+  return objectArray.reduce(function (accumulator, currentValue) {
+    return [...accumulator, ...currentValue.books];
+  }, []);
+}
+
+function removeDuplicateItems (array) {
+  return array.reduce(function (accumulator, currentValue) {
+    if (accumulator.indexOf(currentValue) == -1) {
+      accumulator.push(currentValue);
+    }
+    return accumulator;
+  }, []);
+}
+
+function testCombineFilterAndMap () {
+  const numbers = [-5, 6, 2, 0,];
+  console.log(combineFilterAndMap(numbers));
+}
+
+function combineFilterAndMap (array) {
+  return array.reduce((accumulator, currentValue) => {
+    if (currentValue > 0) {
+      const doubled = currentValue * 2;
+      accumulator.push(doubled);
+    }
+    return accumulator;
+  }, []);
+}
+
 function charArrayFromString (string) {
   return Array.from(string);
 }
@@ -185,6 +253,11 @@ module.exports.calculateSumOfObjectArray = calculateSumOfObjectArray;
 module.exports.calculateMaxOfCoordinateArray = calculateMaxOfCoordinateArray;
 module.exports.flattenArrayOfArrays = flattenArrayOfArrays;
 module.exports.countObjectInstances = countObjectInstances;
+module.exports.groupObjectArrayBy = groupObjectArrayBy;
+module.exports.testBondFromObjectArray = testBondFromObjectArray;
+module.exports.removeDuplicateItems = removeDuplicateItems;
+
+module.exports.sortNumbers = sortNumbers;
 
 module.exports.generateSequence = generateSequence;
 module.exports.generateRange = generateRange;

@@ -62,8 +62,24 @@ languages = Arrays.removeFromBeginning(languages);
 // var array7 = [{x: 1, y: 0}, {x: 2, y: 2}, {x: 3, y: 4}];
 // console.log(Arrays.calculateSumOfObjectArray(array7));
 
-var array8 = [[0, 1], [2, 3], [4, 5]];
-console.log(Arrays.flattenArrayOfArrays(array8));
+// var array8 = [[0, 1], [2, 3], [4, 5]];
+// console.log(Arrays.flattenArrayOfArrays(array8));
 
-var array9 = ['Alice', 'Bob', 'Tiff', 'Bruce', 'Alice'];
-console.log(Arrays.countObjectInstances(array9));
+// var array9 = ['Alice', 'Bob', 'Tiff', 'Bruce', 'Alice'];
+// console.log(Arrays.countObjectInstances(array9));
+
+// let people = [
+//   { name: 'Alice', age: 21 },
+//   { name: 'Max', age: 20 },
+//   { name: 'Jane', age: 20 }
+// ];
+
+// console.log(Arrays.groupObjectArrayBy(people, 'age'));
+
+//Arrays.testBondFromObjectArray();
+
+// var array10 = ['a', 'b', 'a', 'b', 'c', 'e', 'e', 'c', 'd', 'd', 'd', 'd'];
+// console.log(Arrays.removeDuplicateItems(array10));
+
+var numbers = [4, 2, 5, 1, 3];
+console.log(Arrays.sortNumbers(numbers));
