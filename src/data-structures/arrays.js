@@ -161,6 +161,13 @@ function groupObjectArrayBy (objectArray, property) {
   }, {});
 }
 
+function getMaximumFromObjectArray (objectArray, property) {
+  const reducer = (maximum, currentValue) => Math.max(maximum, currentValue);
+  return objectArray.map(function (currentValue) {
+    return currentValue[property];
+  }).reduce(reducer, -Infinity);
+}
+
 function testBondFromObjectArray () {
   let friends = [{
     name: 'Anna',
@@ -254,6 +261,7 @@ module.exports.calculateMaxOfCoordinateArray = calculateMaxOfCoordinateArray;
 module.exports.flattenArrayOfArrays = flattenArrayOfArrays;
 module.exports.countObjectInstances = countObjectInstances;
 module.exports.groupObjectArrayBy = groupObjectArrayBy;
+module.exports.getMaximumFromObjectArray = getMaximumFromObjectArray;
 module.exports.testBondFromObjectArray = testBondFromObjectArray;
 module.exports.removeDuplicateItems = removeDuplicateItems;
 

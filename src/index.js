@@ -19,6 +19,7 @@
 // person.greeting();
 
 var Arrays = require('./data-structures/arrays');
+var Strings = require('./data-types/strings');
 
 let fruits = ['Apple', 'Banana'];
 //Arrays.loopOverArray(fruits);
@@ -81,5 +82,14 @@ languages = Arrays.removeFromBeginning(languages);
 // var array10 = ['a', 'b', 'a', 'b', 'c', 'e', 'e', 'c', 'd', 'd', 'd', 'd'];
 // console.log(Arrays.removeDuplicateItems(array10));
 
-var numbers = [4, 2, 5, 1, 3];
-console.log(Arrays.sortNumbers(numbers));
+// var numbers = [4, 2, 5, 1, 3];
+// console.log(Arrays.sortNumbers(numbers));
+
+// var array11 = [{Number: 1, Condition: 'text1'}, {Number: 3, Condition: 'text3'}, {Number: 2, Condition: 'text2'}];
+// console.log(Arrays.getMaximumFromObjectArray(array11, 'Number'));
+
+// var string1 = 'cat';
+// console.log(Strings.getCharacterAtPosition(string1, 1));
+
+var stringArray = ['Hello', 'World'];
+console.log(Strings.combineStrings(stringArray[0], stringArray[1], ' '));
