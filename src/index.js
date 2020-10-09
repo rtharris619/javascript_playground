@@ -1,37 +1,21 @@
-// const person = {
-//   name: {
-//     first: 'Bob',
-//     last: 'Smith',
-//   },
-//   age: 32,
-//   gender: 'male',
-//   interests: ['music', 'skiing'],
-//   bio: function () {
-//     console.log(this.name.first + ' ' + this.name.last + ' is ' + this.age + ' years old.');
-//   },
-//   greeting: function () {
-//     console.log('Hi! I\'m ' + this.name.first + '.');
-//   }
-// };
 
-// console.log(person.name.last);
-// person.bio();
-// person.greeting();
 
 var Arrays = require('./data-structures/arrays');
 var Strings = require('./data-types/strings');
 
-let fruits = ['Apple', 'Banana'];
+var BinarySearch = require('./algorithms/binary-search');
+
+//let fruits = ['Apple', 'Banana'];
 //Arrays.loopOverArray(fruits);
 
-let languages = ['C#', 'Java', 'JavaScript', 'Python'];
-languages = Arrays.insertIntoArray(languages, 1, 'Rust');
+// let languages = ['C#', 'Java', 'JavaScript', 'Python'];
+// languages = Arrays.insertIntoArray(languages, 1, 'Rust');
 //console.log(languages);
 
-languages = Arrays.insertAtBeginning(languages, 'Clojure');
+//languages = Arrays.insertAtBeginning(languages, 'Clojure');
 //console.log(languages);
 
-languages = Arrays.removeFromBeginning(languages);
+//languages = Arrays.removeFromBeginning(languages);
 //console.log(languages);
 
 //console.log(Arrays.generateSequence(10));
@@ -91,5 +75,7 @@ languages = Arrays.removeFromBeginning(languages);
 // var string1 = 'cat';
 // console.log(Strings.getCharacterAtPosition(string1, 1));
 
-var stringArray = ['Hello', 'World'];
-console.log(Strings.combineStrings(stringArray[0], stringArray[1], ' '));
+// var stringArray = ['Hello', 'World'];
+// console.log(Strings.combineStrings(stringArray[0], stringArray[1], ' '));
+
+BinarySearch.testCase3();
