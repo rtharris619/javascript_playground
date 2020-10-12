@@ -3,8 +3,6 @@
 var Arrays = require('./data-structures/arrays');
 var Strings = require('./data-types/strings');
 
-var BinarySearch = require('./algorithms/binary-search');
-
 //let fruits = ['Apple', 'Banana'];
 //Arrays.loopOverArray(fruits);
 
@@ -78,4 +76,12 @@ var BinarySearch = require('./algorithms/binary-search');
 // var stringArray = ['Hello', 'World'];
 // console.log(Strings.combineStrings(stringArray[0], stringArray[1], ' '));
 
-BinarySearch.testCase3();
+var BinarySearch = require('./algorithms/searching/binary-search');
+//BinarySearch.testCase3();
+
+var QuickSort = require('./algorithms/sorting/quick-sort');
+QuickSort.testCase2();
+
+
+// const array12 = [1, 2, 3, 4, 5];
+// console.log(Arrays.returnSliceOfArray(array12, 0, 2));

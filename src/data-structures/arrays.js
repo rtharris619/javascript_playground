@@ -252,6 +252,7 @@ module.exports.insertIntoArray = insertIntoArray;
 module.exports.insertAtBeginning = insertAtBeginning;
 module.exports.removeFromBeginning = removeFromBeginning;
 module.exports.fillArray = fillArray;
+module.exports.returnSliceOfArray = returnSliceOfArray;
 
 module.exports.arrayToString = arrayToString;
 module.exports.charArrayFromString = charArrayFromString;
