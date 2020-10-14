@@ -74,6 +74,20 @@ function sortNumbers (array) {
   return array.sort((a, b) => a - b);
 }
 
+function sortObjectArray (array, property) {
+  return array.sort((a, b) => {
+    let aValue = a[property].toLowerCase();
+    let bValue = b[property].toLowerCase();
+    if (aValue > bValue) {
+      return 1;
+    } else if (aValue < bValue) {
+      return -1;
+    } else {
+      return 0;
+    }
+  });
+}
+
 // Fill Array Methods
 
 function fillArray (array, fillValue, fromIndex, toPosition) {  
@@ -267,6 +281,7 @@ module.exports.testBondFromObjectArray = testBondFromObjectArray;
 module.exports.removeDuplicateItems = removeDuplicateItems;
 
 module.exports.sortNumbers = sortNumbers;
+module.exports.sortObjectArray = sortObjectArray;
 
 module.exports.generateSequence = generateSequence;
 module.exports.generateRange = generateRange;
