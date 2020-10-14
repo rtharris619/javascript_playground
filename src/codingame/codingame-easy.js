@@ -34,8 +34,47 @@ function solveASCIIArtPuzzle () {
   }
 }
 
+// ChuckNorrisPuzzle
+
+function textToBinary (string) {
+  return string.split('').map(function (char) {
+    return char.charCodeAt(0).toString(2);
+  }).join('');
+}
+
 function solveChuckNorrisPuzzle () {
-  
+  const message = '%';
+  let binaryMessage = textToBinary(message); // 100101
+  console.log(binaryMessage);
+
+  let answer = '';
+  let lastBit = binaryMessage[0];
+  let consecutiveBits = 1;
+
+  for (let i = 1; i < binaryMessage.length; i++) {
+    if (binaryMessage[i] == lastBit) {
+      consecutiveBits++;
+    } else {
+      if (lastBit == '0') {
+        answer += '00 ' + Array.from({length: consecutiveBits}, () => 0).join('') + ' ';
+      } else if (lastBit == '1') {
+        answer += '0 ' + Array.from({length: consecutiveBits}, () => 0).join('') + ' ';
+      }
+      lastBit = binaryMessage[i];
+      consecutiveBits = 1;
+    }
+  }
+
+  if (consecutiveBits > 1) {
+    if (lastBit == '0') {
+      answer += '00 ' + Array.from({length: consecutiveBits}, () => 0).join('') + ' ';
+    } else if (lastBit == '1') {
+      answer += '0 ' + Array.from({length: consecutiveBits}, () => 0).join('') + ' ';
+    }
+  }
+
+  console.log(answer.trim());
 }
 
 module.exports.solveTemperaturesPuzzle = solveTemperaturesPuzzle;
+module.exports.solveChuckNorrisPuzzle = solveChuckNorrisPuzzle;

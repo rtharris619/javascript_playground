@@ -91,4 +91,5 @@ var Strings = require('./data-types/strings');
 // CODEINGAME
 
 var Codingame = require('./codingame/codingame-easy');
-Codingame.solveTemperaturesPuzzle();
+//Codingame.solveTemperaturesPuzzle();
+Codingame.solveChuckNorrisPuzzle();
