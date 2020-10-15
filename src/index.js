@@ -1,7 +1,7 @@
 
 
-var Arrays = require('./data-structures/arrays');
-var Strings = require('./data-types/strings');
+
+
 
 //let fruits = ['Apple', 'Banana'];
 //Arrays.loopOverArray(fruits);
@@ -82,14 +82,34 @@ var Strings = require('./data-types/strings');
 //var QuickSort = require('./algorithms/sorting/quick-sort');
 //QuickSort.testCase2();
 
+
+
+// ARRAYS
+// ---------------------------------------------------------------------------------------------------------------------------
+var Arrays = require('./data-structures/arrays');
 // let people = [{Name: 'Ryan', age: 37}, {Name: 'Claudene', age: 37}];
 // console.log(Arrays.sortObjectArray(people, 'Name'));
 
 // const array12 = [1, 2, 3, 4, 5];
 // console.log(Arrays.returnSliceOfArray(array12, 0, 2));
 
+
+// STRINGS
+// ---------------------------------------------------------------------------------------------------------------------------
+var Strings = require('./data-types/strings');
+//console.log(Strings.padStartOfString('2034399002125581', 4, '*'));
+//console.log(Strings.leftFillNumber(123, 5, 0));
+
+
 // CODEINGAME
+// ---------------------------------------------------------------------------------------------------------------------------
 
 var Codingame = require('./codingame/codingame-easy');
 //Codingame.solveTemperaturesPuzzle();
-Codingame.solveChuckNorrisPuzzle();
+//Codingame.solveChuckNorrisPuzzle();
+
+// CODEWARS
+// ---------------------------------------------------------------------------------------------------------------------------
+var Codewars = require('./codewars/codewar-easy');
+//Codewars.solveSummationPuzzle();
+Codewars.solveSumOfOddsPuzzle();
