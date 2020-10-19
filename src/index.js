@@ -48,9 +48,6 @@
 // var array8 = [[0, 1], [2, 3], [4, 5]];
 // console.log(Arrays.flattenArrayOfArrays(array8));
 
-// var array9 = ['Alice', 'Bob', 'Tiff', 'Bruce', 'Alice'];
-// console.log(Arrays.countObjectInstances(array9));
-
 // let people = [
 //   { name: 'Alice', age: 21 },
 //   { name: 'Max', age: 20 },
@@ -94,12 +91,19 @@ var Arrays = require('./data-structures/arrays');
 // console.log(Arrays.returnSliceOfArray(array12, 0, 2));
 
 
+var array9 = ['Alice', 'Bob', 'Tiff', 'Bruce', 'Alice'];
+console.log(Arrays.countObjectInstances(array9));
+
 // STRINGS
 // ---------------------------------------------------------------------------------------------------------------------------
 var Strings = require('./data-types/strings');
 //console.log(Strings.padStartOfString('2034399002125581', 4, '*'));
 //console.log(Strings.leftFillNumber(123, 5, 0));
 
+/* NUMBERS
+--------------------------------------------------------------------------------------------------------------------------- */
+var Numbers = require('./data-types/numbers');
+//console.log(Numbers.countDecimals("0.1"));
 
 // CODEINGAME
 // ---------------------------------------------------------------------------------------------------------------------------
@@ -115,4 +119,6 @@ var Codewars = require('./codewars/codewar-easy');
 //Codewars.solveSumOfOddsPuzzle();
 //Codewars.solveShortestWordPuzzle();
 //Codewars.solveLargerProductOrSumPuzzle();
-Codewars.solveJadenPuzzle();
+//Codewars.solveJadenPuzzle();
+//Codewars.solveDivisorsProblem();
+//Codewars.solveSquaresProblem();

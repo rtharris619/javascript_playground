@@ -1,4 +1,68 @@
 
+/* Isogram Problem *****
+--------------------------------------------------------------------------------------------------------------------------- */
+function solveIsIsogramProblem() {
+  let str = "Dermatoglyphics";
+  let result = false;
+
+  if (str = '') {
+    result = true;
+  } else {
+    let charArray = Array.from(str);
+    for (let i = 0; i < charArray.length; i++) {
+
+    }
+  }
+}
+
+/* Squares Problem
+--------------------------------------------------------------------------------------------------------------------------- */
+function solveSquaresProblem() {
+  let n = 91;
+  let result = false;
+
+  if (n > 0) {
+    let sqrt = Math.sqrt(n);
+    
+    if (n % sqrt == 0) {
+      result = true;
+    }
+  } else if (n == 0) {
+    result = true;
+  }
+
+  console.log(result);
+}
+
+function solveSquaresProblemAlt() {
+  let n = 81;
+  console.log(Math.sqrt(n) % 1 === 0);
+}
+
+function solveSquaresProblemAlt2() {
+  let n = 81;
+  return Number.isInteger(Math.sqrt(n));
+}
+
+/* Divisors Problem
+--------------------------------------------------------------------------------------------------------------------------- */
+function solveDivisorsProblem () {
+  let integer = 13;
+  let divisors = [];
+
+  for (let divisor = 2; divisor < integer; divisor++) {
+    if (integer % divisor == 0) {
+      divisors.push(divisor);
+    }
+  }
+
+  if (divisors.length == 0) {
+    console.log(`${integer} is prime`)
+  } else {
+    console.log(divisors);
+  }
+}
+
 /* Jaden case Puzzle
 --------------------------------------------------------------------------------------------------------------------------- */
 function solveJadenPuzzle() {
@@ -96,6 +160,8 @@ function solveSummationPuzzle () {
   console.log(summationPuzzle(num));
 }
 
+module.exports.solveSquaresProblem = solveSquaresProblem;
+module.exports.solveDivisorsProblem = solveDivisorsProblem;
 module.exports.solveJadenPuzzle = solveJadenPuzzle;
 module.exports.solveLargerProductOrSumPuzzle = solveLargerProductOrSumPuzzle;
 module.exports.solveShortestWordPuzzle = solveShortestWordPuzzle;
