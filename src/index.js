@@ -90,9 +90,8 @@ var Arrays = require('./data-structures/arrays');
 // const array12 = [1, 2, 3, 4, 5];
 // console.log(Arrays.returnSliceOfArray(array12, 0, 2));
 
-
-var array9 = ['Alice', 'Bob', 'Tiff', 'Bruce', 'Alice'];
-console.log(Arrays.countObjectInstances(array9));
+//var array9 = ['Alice', 'Bob', 'Tiff', 'Bruce', 'Alice'];
+//console.log(Arrays.countObjectInstances(array9));
 
 // STRINGS
 // ---------------------------------------------------------------------------------------------------------------------------
@@ -122,3 +121,4 @@ var Codewars = require('./codewars/codewar-easy');
 //Codewars.solveJadenPuzzle();
 //Codewars.solveDivisorsProblem();
 //Codewars.solveSquaresProblem();
+Codewars.solveIsIsogramProblem();

@@ -1,18 +1,39 @@
 
 /* Isogram Problem *****
 --------------------------------------------------------------------------------------------------------------------------- */
+function caseInsensitiveSort (a, b) {
+  let result = 0;
+  let aLower = a.toLowerCase();
+  let bLower = b.toLowerCase();
+  if (aLower > bLower) {
+    result = 1;
+  } else if (aLower < bLower) {
+    result = -1;
+  }
+  return result;
+}
+
 function solveIsIsogramProblem() {
   let str = "Dermatoglyphics";
-  let result = false;
+  let result = true;
 
-  if (str = '') {
-    result = true;
-  } else {
-    let charArray = Array.from(str);
-    for (let i = 0; i < charArray.length; i++) {
-
+  if (str != '') {
+    let charArray = Array.from(str).sort(caseInsensitiveSort);
+    for (let i = 0; i < charArray.length - 1; i++) {
+      if (charArray[i].toLowerCase() == charArray[i + 1].toLowerCase()) {
+        result = false;
+        break;
+      }
     }
   }
+
+  console.log(result);
+}
+
+function solveIsIsogramProblemAlt () {
+  let str = "Dermatoglyphics";
+  let result = new Set(str.toLowerCase()).size == str.length;
+  console.log(result);
 }
 
 /* Squares Problem
@@ -160,6 +181,7 @@ function solveSummationPuzzle () {
   console.log(summationPuzzle(num));
 }
 
+module.exports.solveIsIsogramProblem = solveIsIsogramProblem;
 module.exports.solveSquaresProblem = solveSquaresProblem;
 module.exports.solveDivisorsProblem = solveDivisorsProblem;
 module.exports.solveJadenPuzzle = solveJadenPuzzle;
