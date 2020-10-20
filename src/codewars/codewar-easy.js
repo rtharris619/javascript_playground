@@ -1,4 +1,20 @@
 
+/* Counting Duplicates Problem *****
+--------------------------------------------------------------------------------------------------------------------------- */
+function solveCountDuplicateProblem() {
+  let text = 'aA11'; // i and s => 2
+  let textSet = new Set(text.toLowerCase());
+  let textArray = Array.from(text.toLowerCase());
+  let duplicateCount = 0;
+
+  for (let item of textSet.values()) {
+    if (textArray.filter(x => x == item).length > 1) {
+      duplicateCount++;
+    }
+  }
+  console.log(duplicateCount);
+}
+
 /* Isogram Problem *****
 --------------------------------------------------------------------------------------------------------------------------- */
 function caseInsensitiveSort (a, b) {
@@ -181,6 +197,7 @@ function solveSummationPuzzle () {
   console.log(summationPuzzle(num));
 }
 
+module.exports.solveCountDuplicateProblem = solveCountDuplicateProblem;
 module.exports.solveIsIsogramProblem = solveIsIsogramProblem;
 module.exports.solveSquaresProblem = solveSquaresProblem;
 module.exports.solveDivisorsProblem = solveDivisorsProblem;

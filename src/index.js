@@ -104,9 +104,13 @@ var Strings = require('./data-types/strings');
 var Numbers = require('./data-types/numbers');
 //console.log(Numbers.countDecimals("0.1"));
 
+/* BSTs
+--------------------------------------------------------------------------------------------------------------------------- */
+let BST = require('./data-structures/binary-search-tree');
+//BST.bstTestCase1();
+
 // CODEINGAME
 // ---------------------------------------------------------------------------------------------------------------------------
-
 var Codingame = require('./codingame/codingame-easy');
 //Codingame.solveTemperaturesPuzzle();
 //Codingame.solveChuckNorrisPuzzle();
@@ -121,4 +125,5 @@ var Codewars = require('./codewars/codewar-easy');
 //Codewars.solveJadenPuzzle();
 //Codewars.solveDivisorsProblem();
 //Codewars.solveSquaresProblem();
-Codewars.solveIsIsogramProblem();
+//Codewars.solveIsIsogramProblem();
+Codewars.solveCountDuplicateProblem();
