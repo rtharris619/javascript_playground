@@ -121,6 +121,29 @@ class BST {
       return result;
     }
   }
+
+  // breadth first search
+  // Going through the levels
+  levelOrderTraversal() {
+    let result = [];
+    let queue = [];
+    if (this.root !== null) {
+      queue.push(this.root);
+      while (queue.length > 0) {
+        let node = queue.shift();
+        result.push(node.data);
+        if (node.left !== null) {
+          queue.push(node.left);
+        }
+        if (node.right !== null) {
+          queue.push(node.right);
+        }
+      }
+      return result;
+    } else {
+      return null;
+    }
+  }
 }
 
 const bstTestCase1 = () => {
@@ -135,7 +158,10 @@ const bstTestCase1 = () => {
   bst.addNode(7);
   bst.addNode(20);
   bst.addNode(10);
+  console.log('Inorder: ', bst.inOrderTraversal());
+  console.log('Preorder: ', bst.preOrderTraversal());
   console.log('Postorder: ', bst.postOrderTraversal());
-}
+  console.log('Levelorder: ', bst.levelOrderTraversal());
+};
 
 module.exports.bstTestCase1 = bstTestCase1;

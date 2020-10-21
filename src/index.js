@@ -107,7 +107,7 @@ var Numbers = require('./data-types/numbers');
 /* BSTs
 --------------------------------------------------------------------------------------------------------------------------- */
 let BST = require('./data-structures/binary-search-tree');
-//BST.bstTestCase1();
+BST.bstTestCase1();
 
 // CODEINGAME
 // ---------------------------------------------------------------------------------------------------------------------------
@@ -126,4 +126,5 @@ var Codewars = require('./codewars/codewar-easy');
 //Codewars.solveDivisorsProblem();
 //Codewars.solveSquaresProblem();
 //Codewars.solveIsIsogramProblem();
-Codewars.solveCountDuplicateProblem();
+//Codewars.solveCountDuplicateProblem();
+//Codewars.solveBouncingBallProblem();

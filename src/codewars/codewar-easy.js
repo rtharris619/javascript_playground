@@ -1,5 +1,27 @@
 
-/* Counting Duplicates Problem *****
+/* Bouncing Balls Problem
+--------------------------------------------------------------------------------------------------------------------------- */
+function solveBouncingBallProblem() {
+  let h = 30;
+  let bounce = 0.66;
+  let window = 1.5;
+  let rebounds = 1;
+
+  if (h > 0 && bounce > 0 && bounce < 1 && window < h) {
+    let currentHeight = h * bounce;
+
+    while (currentHeight > window) {
+      rebounds += 2;
+      currentHeight = currentHeight * bounce;
+    }
+  } else {
+    rebounds = -1;
+  }
+
+  console.log(rebounds);
+}
+
+/* Counting Duplicates Problem
 --------------------------------------------------------------------------------------------------------------------------- */
 function solveCountDuplicateProblem() {
   let text = 'aA11'; // i and s => 2
@@ -15,7 +37,7 @@ function solveCountDuplicateProblem() {
   console.log(duplicateCount);
 }
 
-/* Isogram Problem *****
+/* Isogram Problem
 --------------------------------------------------------------------------------------------------------------------------- */
 function caseInsensitiveSort (a, b) {
   let result = 0;
@@ -197,6 +219,7 @@ function solveSummationPuzzle () {
   console.log(summationPuzzle(num));
 }
 
+module.exports.solveBouncingBallProblem = solveBouncingBallProblem;
 module.exports.solveCountDuplicateProblem = solveCountDuplicateProblem;
 module.exports.solveIsIsogramProblem = solveIsIsogramProblem;
 module.exports.solveSquaresProblem = solveSquaresProblem;
