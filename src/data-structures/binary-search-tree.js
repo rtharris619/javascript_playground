@@ -40,6 +40,20 @@ class BST {
     }
   }
 
+  // TODO: doesn't make sense...
+  findMinHeight(node = this.root) {
+    if (node == null) {
+      return -1;
+    }
+    let left = this.findMinHeight(node.left);
+    let right = this.findMinHeight(node.right);
+    if (left < right) {
+      return left + 1;
+    } else {
+      return right + 1;
+    }
+  }
+
   findMinNode() {
     let current = this.root;
     while (current.left !== null) {
@@ -158,6 +172,7 @@ const bstTestCase1 = () => {
   bst.addNode(7);
   bst.addNode(20);
   bst.addNode(10);
+  console.log('Min-height: ', bst.findMinHeight());
   console.log('Inorder: ', bst.inOrderTraversal());
   console.log('Preorder: ', bst.preOrderTraversal());
   console.log('Postorder: ', bst.postOrderTraversal());

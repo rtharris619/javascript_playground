@@ -1,4 +1,28 @@
 
+/* Equal sides array Problem
+--------------------------------------------------------------------------------------------------------------------------- */
+function solveEqualSidesArrayProblem() {
+  let arr = [20,10,-80,10,10,15,35];
+
+  let result = -1;
+  for (let i = 0; i < arr.length - 1; i++) {    
+
+    let leftSum = (i == 0 ? arr[i] : arr.slice(0, i).reduce((accumulator, currentValue) => accumulator + currentValue));
+    let rightSum = arr.slice(i + 1).reduce((accumulator, currentValue) => accumulator + currentValue);
+
+    if (i == 0 && rightSum === 0) {
+      result = 0;
+      break;
+    }
+    
+    if (leftSum === rightSum) {
+      result = i;
+      break;
+    }
+  }
+  console.log(result);
+}
+
 /* Bouncing Balls Problem
 --------------------------------------------------------------------------------------------------------------------------- */
 function solveBouncingBallProblem() {
@@ -219,6 +243,8 @@ function solveSummationPuzzle () {
   console.log(summationPuzzle(num));
 }
 
+
+module.exports.solveEqualSidesArrayProblem = solveEqualSidesArrayProblem;
 module.exports.solveBouncingBallProblem = solveBouncingBallProblem;
 module.exports.solveCountDuplicateProblem = solveCountDuplicateProblem;
 module.exports.solveIsIsogramProblem = solveIsIsogramProblem;

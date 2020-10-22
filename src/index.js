@@ -128,3 +128,4 @@ var Codewars = require('./codewars/codewar-easy');
 //Codewars.solveIsIsogramProblem();
 //Codewars.solveCountDuplicateProblem();
 //Codewars.solveBouncingBallProblem();
+//Codewars.solveEqualSidesArrayProblem();
