@@ -1,6 +1,30 @@
 
 /* Equal sides array Problem
 --------------------------------------------------------------------------------------------------------------------------- */
+function solveMultiples3or5_() {
+  let number = 10;
+  let numberArray = Array.from({length: number}, (_, i) => i + 1);
+  
+  let multiples = [];
+  for (let i = 0; i < numberArray.length - 1; i++) {
+    if (numberArray[i] > 0) {
+      if (numberArray[i] % 3 == 0 || numberArray[i] % 5 == 0) {
+        multiples.push(numberArray[i]);
+      }
+    }
+  }
+
+  console.log(numberArray.length > 0 ? multiples.reduce((accumulator, currentValue) => accumulator + currentValue) : 0);
+}
+
+function solveMultiples3or5() {
+  let number = 10;
+  let result = number <= 0 ? 0 : Array.from({length: number}, (_, i) => (i % 3 == 0 || i % 5 == 0) ? i : 0).reduce((x, y) => x + y);
+  console.log(result);
+}
+
+/* Equal sides array Problem
+--------------------------------------------------------------------------------------------------------------------------- */
 function solveEqualSidesArrayProblem() {
   let arr = [20,10,-80,10,10,15,35];
 
@@ -14,7 +38,7 @@ function solveEqualSidesArrayProblem() {
       result = 0;
       break;
     }
-    
+
     if (leftSum === rightSum) {
       result = i;
       break;
@@ -243,7 +267,7 @@ function solveSummationPuzzle () {
   console.log(summationPuzzle(num));
 }
 
-
+module.exports.solveMultiples3or5 = solveMultiples3or5;
 module.exports.solveEqualSidesArrayProblem = solveEqualSidesArrayProblem;
 module.exports.solveBouncingBallProblem = solveBouncingBallProblem;
 module.exports.solveCountDuplicateProblem = solveCountDuplicateProblem;
