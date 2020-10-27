@@ -119,6 +119,7 @@ var Codingame = require('./codingame/codingame-easy');
 // ---------------------------------------------------------------------------------------------------------------------------
 var Codewars = require('./codewars/codewar-easy');
 Codewars.solveMultiples3or5();
+Codewars.solveCountingBitsProblem();
 //Codewars.solveSummationPuzzle();
 //Codewars.solveSumOfOddsPuzzle();
 //Codewars.solveShortestWordPuzzle();

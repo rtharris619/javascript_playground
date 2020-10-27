@@ -1,3 +1,16 @@
+/* Counting bits Problem
+--------------------------------------------------------------------------------------------------------------------------- */
+function solveCountingBitsProblem() {
+  let n = 1234;
+  let binary = n.toString(2);
+  let result = [...binary].reduce((accumulator, currentValue) => {
+    if (currentValue == 1) {
+      accumulator++;
+    }
+    return accumulator;
+  }, 0);
+  console.log(result);
+}
 
 /* Equal sides array Problem
 --------------------------------------------------------------------------------------------------------------------------- */
@@ -268,6 +281,7 @@ function solveSummationPuzzle () {
 }
 
 module.exports.solveMultiples3or5 = solveMultiples3or5;
+module.exports.solveCountingBitsProblem = solveCountingBitsProblem;
 module.exports.solveEqualSidesArrayProblem = solveEqualSidesArrayProblem;
 module.exports.solveBouncingBallProblem = solveBouncingBallProblem;
 module.exports.solveCountDuplicateProblem = solveCountDuplicateProblem;
