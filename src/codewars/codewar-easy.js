@@ -1,3 +1,24 @@
+/* Is Prime Problem
+--------------------------------------------------------------------------------------------------------------------------- */
+function solveIsPrimeProblem() {
+  let num = 25;
+  let isPrime = Array.from({length: num}, (_, i) => true);
+  isPrime[0] = false;
+
+  for (let i = 2; i <= num; i++) {
+    if (isPrime[i - 1]) {
+
+      console.log(i);
+
+      for (let j = i * i; j <= num; j += i) {
+        isPrime[j - 1] = false;
+      }
+    }
+  }
+  
+  console.log(isPrime[num - 1]);
+}
+
 /* Counting bits Problem
 --------------------------------------------------------------------------------------------------------------------------- */
 function solveCountingBitsProblem() {
@@ -280,6 +301,7 @@ function solveSummationPuzzle () {
   console.log(summationPuzzle(num));
 }
 
+module.exports.solveIsPrimeProblem = solveIsPrimeProblem;
 module.exports.solveMultiples3or5 = solveMultiples3or5;
 module.exports.solveCountingBitsProblem = solveCountingBitsProblem;
 module.exports.solveEqualSidesArrayProblem = solveEqualSidesArrayProblem;
