@@ -24,8 +24,36 @@ function leftFillNumber (number, targetLength, paddingDigit) {
   return number.toString().padStart(targetLength, paddingDigit);
 }
 
+// Regex
+
+function getContainedWords(regStart, regEnd) {
+  let testString = '{{StoreName}} - Job Card Collection {{JbcdNo}}';
+
+  let resultOpening = null;
+  let openingIndices = [];
+
+  let resultClosing = null;
+  let closingIndices = [];
+
+  while ((resultOpening = regStart.exec(testString))) {
+      openingIndices.push(resultOpening.index);
+  }
+
+  while ((resultClosing = regEnd.exec(testString))) {
+      closingIndices.push(resultClosing.index);
+  }
+
+  let words = [];
+  for (let i in openingIndices) {
+      words.push(testString.substr(openingIndices[i] + 2, closingIndices[i] - openingIndices[i] - 2));
+  }
+  return words;
+}
+
 module.exports.getCharacterAtPosition = getCharacterAtPosition;
 
 module.exports.combineStrings = combineStrings;
 module.exports.padStartOfString = padStartOfString;
 module.exports.leftFillNumber = leftFillNumber;
+
+module.exports.getContainedWords = getContainedWords;
