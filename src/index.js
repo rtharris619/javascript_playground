@@ -5,7 +5,7 @@ var Arrays = require('./data-structures/arrays');
 // STRINGS
 // ---------------------------------------------------------------------------------------------------------------------------
 var Strings = require('./data-types/strings');
-console.log(Strings.getContainedWords(/{{/gi, /}}/gi));
+// console.log(Strings.getContainedWords(/{{/gi, /}}/gi));
 
 /* NUMBERS
 --------------------------------------------------------------------------------------------------------------------------- */
@@ -22,3 +22,8 @@ var Codingame = require('./codingame/codingame-easy');
 // CODEWARS
 // ---------------------------------------------------------------------------------------------------------------------------
 var Codewars = require('./codewars/codewar-easy');
+
+/* FUNCTIONAL CODING
+--------------------------------------------------------------------------------------------------------------------------- */
+var Functional = require('./functional/functional');
+Functional.testFunctionalCode();
