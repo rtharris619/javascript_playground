@@ -23,11 +23,11 @@ let BST = require('./data-structures/binary-search-tree');
 
 // CODEINGAME
 // ---------------------------------------------------------------------------------------------------------------------------
-var Codingame = require('./codingame/codingame-easy');
+var Codingame = require('./challenges/codingame/codingame-easy');
 
 // CODEWARS
 // ---------------------------------------------------------------------------------------------------------------------------
-var Codewars = require('./codewars/codewar-easy');
+var Codewars = require('./challenges/codewars/codewar-easy');
 
 /* FUNCTIONAL CODING
 --------------------------------------------------------------------------------------------------------------------------- */
