@@ -11,6 +11,12 @@ var Strings = require('./data-types/strings');
 --------------------------------------------------------------------------------------------------------------------------- */
 var Numbers = require('./data-types/numbers');
 
+/* DATES
+--------------------------------------------------------------------------------------------------------------------------- */
+var Dates = require('./data-types/dates');
+
+Dates.testDateConversion();
+
 /* BSTs
 --------------------------------------------------------------------------------------------------------------------------- */
 let BST = require('./data-structures/binary-search-tree');
@@ -26,4 +32,3 @@ var Codewars = require('./codewars/codewar-easy');
 /* FUNCTIONAL CODING
 --------------------------------------------------------------------------------------------------------------------------- */
 var Functional = require('./functional/functional');
-Functional.testFunctionalCode();
