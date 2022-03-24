@@ -1,0 +1,302 @@
+[
+    {
+     "id": 1,
+     "quote": "There are no secrets to success. It is the result of preparation, hard work, and learning from failure.",
+     "author": "Colin Powell"
+    },
+    {
+     "id": 2,
+     "quote": "Whenever you find yourself on the side of the majority, it is time to pause and reflect.",
+     "author": "Mark Twain"
+    },
+    {
+     "id": 3,
+     "quote": "If one does not know to which port one is sailing, no wind is favorable.",
+     "author": "Lucius Annaeus Seneca"
+    },
+    {
+     "id": 4,
+     "quote": "There is only one boss. The customer. And he can fire everybody in the company from the chairman on down, simply by spending his money somewhere else.",
+     "author": "Sam Walton"
+    },
+    {
+     "id": 5,
+     "quote": "If you're trying to create a company, it's like baking a cake. You have to have all the ingredients in the right proportion.",
+     "author": "Elon Musk"
+    },
+    {
+     "id": 6,
+     "quote": "If you owe the bank $100 that's your problem. If you owe the bank $100 million, that's the bank's problem.",
+     "author": "J. Paul Getty"
+    },
+    {
+     "id": 7,
+     "quote": "It is not from the benevolence of the butcher, the brewer, or the baker that we expect our dinner, but from their regard to their own interest.",
+     "author": "Adam Smith"
+    },
+    {
+     "id": 8,
+     "quote": "Most of the important things in the world have been accomplished by people who have kept on trying when there seemed to be no hope at all.",
+     "author": "Dale Carnegie"
+    },
+    {
+     "id": 9,
+     "quote": "Making money is art and working is art and good business is the best art.",
+     "author": "Andy Warhol"
+    },
+    {
+     "id": 10,
+     "quote": "Details create the big picture.",
+     "author": "Sanford I. Weill"
+    },
+    {
+     "id": 11,
+     "quote": "A business that makes nothing but money is a poor business.",
+     "author": "Henry Ford"
+    },
+    {
+     "id": 12,
+     "quote": "A brand for a company is like a reputation for a person. You earn reputation by trying to do hard things well.",
+     "author": "Jeff Bezos"
+    },
+    {
+     "id": 13,
+     "quote": "Ideas pull the trigger, but instinct loads the gun.",
+     "author": "Don Marquis"
+    },
+    {
+     "id": 14,
+     "quote": "In the business world, everyone is paid in two coins: cash and experience. Take the experience first; the cash will come later.",
+     "author": "Harold S. Geneen"
+    },
+    {
+     "id": 15,
+     "quote": "Happiness does not come from doing easy work but from the afterglow of satisfaction that comes after the achievement of a difficult task that demanded our best.",
+     "author": "Theodore Isaac Rubin"
+    },
+    {
+     "id": 16,
+     "quote": "An economist is an expert who will know tomorrow why the things he predicted yesterday didn't happen today.",
+     "author": "Laurence J. Peter"
+    },
+    {
+     "id": 17,
+     "quote": "The entrepreneur always searches for change, responds to it, and exploits it as an opportunity.",
+     "author": "Peter Drucker"
+    },
+    {
+     "id": 18,
+     "quote": "An organization's ability to learn, and translate that learning into action rapidly, is the ultimate competitive advantage.",
+     "author": "Jack Welch"
+    },
+    {
+     "id": 19,
+     "quote": "The first responsibility of a leader is to define reality. The last is to say thank you. In between, the leader is a servant.",
+     "author": "Max de Pree"
+    },
+    {
+     "id": 20,
+     "quote": "Some people regard private enterprise as a predatory tiger to be shot. Others look on it as a cow they can milk. Not enough people see it as a healthy horse, pulling a sturdy wagon.",
+     "author": "Winston Churchill"
+    },
+    {
+     "id": 21,
+     "quote": "An organization, no matter how well designed, is only as good as the people who live and work in it.",
+     "author": "Dee Hock"
+    },
+    {
+     "id": 22,
+     "quote": "Just because something doesn't do what you planned it to do doesn't mean it's useless.",
+     "author": "Thomas A. Edison"
+    },
+    {
+     "id": 23,
+     "quote": "Economic depression cannot be cured by legislative action or executive pronouncement. Economic wounds must be healed by the action of the cells of the economic body - the producers and consumers themselves.",
+     "author": "Herbert Hoover"
+    },
+    {
+     "id": 24,
+     "quote": "Our work is the presentation of our capabilities.",
+     "author": "Edward Gibbon"
+    },
+    {
+     "id": 25,
+     "quote": "It's easy to make a buck. It's a lot tougher to make a difference.",
+     "author": "Tom Brokaw"
+    },
+    {
+     "id": 26,
+     "quote": "The superior man understands what is right; the inferior man understands what will sell.",
+     "author": "Confucius"
+    },
+    {
+     "id": 27,
+     "quote": "A company is only as good as the people it keeps.",
+     "author": "Mary Kay Ash"
+    },
+    {
+     "id": 28,
+     "quote": "Don't worry about people stealing your ideas. If your ideas are any good, you'll have to ram them down people's throats.",
+     "author": "Howard Aiken"
+    },
+    {
+     "id": 29,
+     "quote": "Effort only fully releases its reward after a person refuses to quit.",
+     "author": "Napoleon Hill"
+    },
+    {
+     "id": 30,
+     "quote": "One of the tests of leadership is the ability to recognize a problem before it becomes an emergency.",
+     "author": "Arnold H. Glasow"
+    },
+    {
+     "id": 31,
+     "quote": "I hope we shall crush in its birth the aristocracy of our monied corporations which dare already to challenge our government to a trial by strength, and bid defiance to the laws of our country.",
+     "author": "Thomas Jefferson"
+    },
+    {
+     "id": 32,
+     "quote": "Do more than is required. What is the distance between someone who achieves their goals consistently and those who spend their lives and careers merely following? The extra mile.",
+     "author": "Gary Ryan Blair"
+    },
+    {
+     "id": 33,
+     "quote": "Corporation: An ingenious device for obtaining profit without individual responsibility.",
+     "author": "Ambrose Bierce"
+    },
+    {
+     "id": 34,
+     "quote": "Try, try, try, and keep on trying is the rule that must be followed to become an expert in anything.",
+     "author": "W. Clement Stone"
+    },
+    {
+     "id": 35,
+     "quote": "Failure doesn't mean you are a failure it just means you haven't succeeded yet.",
+     "author": "Robert H. Schuller"
+    },
+    {
+     "id": 36,
+     "quote": "Almost all quality improvement comes via simplification of design, manufacturing... layout, processes, and procedures.",
+     "author": "Tom Peters"
+    },
+    {
+     "id": 37,
+     "quote": "No enterprise is more likely to succeed than one concealed from the enemy until it is ripe for execution.",
+     "author": "Niccolo Machiavelli"
+    },
+    {
+     "id": 38,
+     "quote": "When in doubt, mumble; when in trouble, delegate; when in charge, ponder.",
+     "author": "James H. Boren"
+    },
+    {
+     "id": 39,
+     "quote": "If you don't drive your business, you will be driven out of business.",
+     "author": "B. C. Forbes"
+    },
+    {
+     "id": 40,
+     "quote": "So little done, so much to do.",
+     "author": "Cecil Rhodes"
+    },
+    {
+     "id": 41,
+     "quote": "Sooner or later, those who win are those who think they can.",
+     "author": "Paul Tournier"
+    },
+    {
+     "id": 42,
+     "quote": "Carpe per diem - seize the check.",
+     "author": "Robin Williams"
+    },
+    {
+     "id": 43,
+     "quote": "And while the law of competition may be sometimes hard for the individual, it is best for the race, because it ensures the survival of the fittest in every department.",
+     "author": "Andrew Carnegie"
+    },
+    {
+     "id": 44,
+     "quote": "Industry is fortune's right hand, and frugality its left.",
+     "author": "John Ray"
+    },
+    {
+     "id": 45,
+     "quote": "It's not what you pay a man, but what he costs you that counts.",
+     "author": "Will Rogers"
+    },
+    {
+     "id": 46,
+     "quote": "To command is to serve, nothing more and nothing less.",
+     "author": "Andre Malraux"
+    },
+    {
+     "id": 47,
+     "quote": "The secret of business is to know something that nobody else knows.",
+     "author": "Aristotle Onassis"
+    },
+    {
+     "id": 48,
+     "quote": "Success or failure in business is caused more by the mental attitude even than by mental capacities.",
+     "author": "Walter Scott"
+    },
+    {
+     "id": 49,
+     "quote": "All lasting business is built on friendship.",
+     "author": "Alfred A. Montapert"
+    },
+    {
+     "id": 50,
+     "quote": "Meetings are indispensable when you don't want to do anything.",
+     "author": "John Kenneth Galbraith"
+    },
+    {
+     "id": 51,
+     "quote": "It's OK to have your eggs in one basket as long as you control what happens to that basket.",
+     "author": "Elon Musk"
+    },
+    {
+     "id": 52,
+     "quote": "Wise are those who learn that the bottom line doesn't always have to be their top priority.",
+     "author": "William Arthur Ward"
+    },
+    {
+     "id": 53,
+     "quote": "If you cannot work with love but only with distaste, it is better that you should leave your work.",
+     "author": "Khalil Gibran"
+    },
+    {
+     "id": 54,
+     "quote": "Profit in business comes from repeat customers, customers that boast about your project or service, and that bring friends with them.",
+     "author": "W. Edwards Deming"
+    },
+    {
+     "id": 55,
+     "quote": "The way to get things done is not to mind who gets the credit for doing them.",
+     "author": "Benjamin Jowett"
+    },
+    {
+     "id": 56,
+     "quote": "If you want to kill any idea in the world, get a committee working on it.",
+     "author": "Charles Kettering"
+    },
+    {
+     "id": 57,
+     "quote": "Everyone is your best friend when you are successful. Make sure that the people that you surround yourself with are also the people that you are not afraid of failing with.",
+     "author": "Paula Abdul"
+    },
+    {
+     "id": 58,
+     "quote": "Business is a combination of war and sport.",
+     "author": "Andre Maurois"
+    },
+    {
+     "id": 59,
+     "quote": "The business of America is business.",
+     "author": "Calvin Coolidge"
+    },
+    {
+     "id": 60,
+     "quote": "If it doesn't sell, it isn't creative.",
+     "author": "David Ogilvy"
+    }
+   ]

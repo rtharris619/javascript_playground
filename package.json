@@ -8,5 +8,8 @@
     "start": "node src/index.js"
   },
   "author": "Ryan Harris",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "jsonata": "^1.8.6"
+  }
 }
