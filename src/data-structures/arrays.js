@@ -35,6 +35,11 @@ function returnSliceOfArray (array, fromIndex, toIndex) {
   return array.slice(fromIndex, toIndex);
 }
 
+function stringifyArray() {
+  let columns = ['ID', 'IsActive', 'TenantID'];
+  return columns.join(",");
+}
+
 // Filters
 
 function filterWordLengthGreaterThan (array, wordLength) {
@@ -267,6 +272,7 @@ module.exports.insertAtBeginning = insertAtBeginning;
 module.exports.removeFromBeginning = removeFromBeginning;
 module.exports.fillArray = fillArray;
 module.exports.returnSliceOfArray = returnSliceOfArray;
+module.exports.stringifyArray = stringifyArray;
 
 module.exports.arrayToString = arrayToString;
 module.exports.charArrayFromString = charArrayFromString;

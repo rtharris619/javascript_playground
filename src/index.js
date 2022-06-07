@@ -1,7 +1,7 @@
 // ARRAYS
 // ---------------------------------------------------------------------------------------------------------------------------
 var Arrays = require('./data-structures/arrays');
-
+console.log(Arrays.stringifyArray());
 // STRINGS
 // ---------------------------------------------------------------------------------------------------------------------------
 var Strings = require('./data-types/strings');
@@ -31,5 +31,4 @@ var Codewars = require('./challenges/codewars/codewar-easy');
 --------------------------------------------------------------------------------------------------------------------------- */
 var Functional = require('./functional/functional');
 
-var json = require('./json/json');
-json.queryFile();
+
