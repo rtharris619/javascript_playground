@@ -76,5 +76,13 @@ function testTimeAdjustment() {
     testTimeAdjustment2();
 }
 
+function testDateFormatting() {
+    let yourDate = new Date();
+    let temp = yourDate.toISOString().split('T')[0];
+
+    console.log(new Date(temp));
+}
+
+module.exports.testDateFormatting = testDateFormatting;
 module.exports.testDateConversion = testDateConversion;
 module.exports.testTimeAdjustment = testTimeAdjustment;

@@ -14,4 +14,14 @@ function countDecimals (number) {
   }
 }
 
-module.exports.countDecimals = countDecimals;
+function testNaN() {
+  const number = Number("123");
+  let result = isNaN(+number) ? 0 : +number;
+  console.log(result);
+}
+
+const driver = () => {
+  testNaN();
+}
+
+module.exports.driver = driver;

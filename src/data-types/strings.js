@@ -50,6 +50,15 @@ function getContainedWords(regStart, regEnd) {
   return words;
 }
 
+const testForNullOrEmpty = () => {
+  let testString = '';
+  console.log(testString ? testString : 'Empty');
+}
+
+function driver() {
+  testForNullOrEmpty();
+}
+
 module.exports.getCharacterAtPosition = getCharacterAtPosition;
 
 module.exports.combineStrings = combineStrings;
@@ -57,3 +66,5 @@ module.exports.padStartOfString = padStartOfString;
 module.exports.leftFillNumber = leftFillNumber;
 
 module.exports.getContainedWords = getContainedWords;
+
+module.exports.driver = driver;

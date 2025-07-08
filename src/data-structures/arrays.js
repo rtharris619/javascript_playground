@@ -265,31 +265,74 @@ function generateWordsFromSentences (array) {
   // Returns: ["it's","Sunny","in", "", "California"]
 }
 
-module.exports.loopOverArray = loopOverArray;
-module.exports.getArrayEntries = getArrayEntries;
-module.exports.insertIntoArray = insertIntoArray;
-module.exports.insertAtBeginning = insertAtBeginning;
-module.exports.removeFromBeginning = removeFromBeginning;
-module.exports.fillArray = fillArray;
-module.exports.returnSliceOfArray = returnSliceOfArray;
-module.exports.stringifyArray = stringifyArray;
+function objectFiltering () {
+  let accounts = [
+    {
+      bpNumber: 1, refinancier: "WESBANK"
+    },
+    {
+      bpNumber: 1, refinancier: "nedBANK"
+    },
+    {
+      bpNumber: 2, refinancier: "NEDBANK"
+    },
+  ];
 
-module.exports.arrayToString = arrayToString;
-module.exports.charArrayFromString = charArrayFromString;
-module.exports.calculateSumOfArray = calculateSumOfArray;
-module.exports.calculateSumOfObjectArray = calculateSumOfObjectArray;
-module.exports.calculateMaxOfCoordinateArray = calculateMaxOfCoordinateArray;
-module.exports.flattenArrayOfArrays = flattenArrayOfArrays;
-module.exports.countObjectInstances = countObjectInstances;
-module.exports.groupObjectArrayBy = groupObjectArrayBy;
-module.exports.getMaximumFromObjectArray = getMaximumFromObjectArray;
-module.exports.testBondFromObjectArray = testBondFromObjectArray;
-module.exports.removeDuplicateItems = removeDuplicateItems;
+  let filter = 'Nedbank';
 
-module.exports.sortNumbers = sortNumbers;
-module.exports.sortObjectArray = sortObjectArray;
+  let matches = accounts.filter(x => x.bpNumber == 1 && x.refinancier.toLowerCase() == filter.toLowerCase());
+  console.log(matches);
+}
 
-module.exports.generateSequence = generateSequence;
-module.exports.generateRange = generateRange;
-module.exports.generateAlphabet = generateAlphabet;
-module.exports.generateWordsFromSentences = generateWordsFromSentences;
+function dataFiltering () {
+  let data = 
+  [
+    {
+      "type": "BUTTON",
+      "id": "k0gc017331",
+      "nodes": "[Array]",
+      "buttonData": "[Object]"
+    },
+    {
+      "type": "PARAGRAPH",
+      "id": "gfm1617333",
+      "nodes": "[Array]",
+      "paragraphData": "[Object]"
+    },
+    {
+      "type": "PARAGRAPH",
+      "id": "1cih64432",
+      "nodes": "[Array]",
+      "paragraphData": "[Object]"
+    },
+    {
+      "type": "PARAGRAPH",
+      "id": "kd0dz374",
+      "nodes": "[Array]",
+      "paragraphData": "[Object]"
+    },
+    {
+      "type": "PARAGRAPH",
+      "id": "xib5k453",
+      "nodes": "[Array]",
+      "paragraphData": "[Object]"
+    }
+  ];
+
+  let buttons = data.filter(element => element.type === "BUTTON");
+  console.log(buttons);
+}
+
+function quickTest() {
+  let link = "https://www.avenews-gt.com/agri-credit-line";
+
+  let result = ["agri-credit-line", "invoice-finance", "buyer-financing"].indexOf(link);
+
+  console.log(result);
+}
+
+function driver() {
+  quickTest();
+}
+
+module.exports.driver = driver;
